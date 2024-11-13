@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leemen Lifts - About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="aboutus_styles.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand" href="../index.html">
+            <img src="../home/images/leemen_logo.png" alt="Leemen Lifts Logo" width="45" height="45"> 
+            <strong>Leemen LIFTS</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+            <ul class="navbar-nav">
+                <li id="qwerty" class="nav-item active"><a class="nav-link" href="../index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../models/models.html">Models</a></li>
+                <li class="nav-item"><a class="nav-link" href="../services/services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="../careers/careers.html">Careers</a></li>
+                <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<!-- Jumbotron Section -->
+<div class="container">
+    <div class="col-md-12">
+        <div class="h-100 bg-light jumbotron-margin">
+            <h2 id="home_jumbotron_head"><strong>About Leemen Lifts</strong></h2>
+            <h4 id="home_jumbotron_head">Dedicated, Innovative, Experienced, and Enthusiastic Team</h4>
+            <p id="home_jumbotron_para">Founded over a decade ago, Leemens Lifts has grown into a trusted name in 
+                lift solutions. Our mission is simple: to make vertical transportation safe, reliable, and affordable 
+                for everyone. We prioritize quality and safety above all, ensuring that each lift meets strict safety 
+                regulations and is designed for long-lasting performance. With a focus on customization, we work closely 
+                with our clients to bring their vision to life, integrating seamlessly into any architectural plan.</p>
+            <!-- <button class="btn btn-outline-secondary" type="button">Example button</button> -->
+        </div>
+    </div>
+</div>
+
+
+<!-- Contact and Address Section -->
+<section class="aboutus-section py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Contact Form Part -->
+            <div class="col-12 col-md-6 mb-4" style="margin-bottom: 50px;">
+                <h3>Contact Us</h3>
+                <form id="contact-form">
+                    <div class="mb-3">
+                        <label for="helpSelect" class="form-label">How can we help you?</label>
+                        <select class="form-select" id="helpSelect" name="help">
+                            <option selected>Choose...</option>
+                            <option value="Product">Product</option>
+                            <option value="Service">Service</option>
+                            <option value="Career">Career</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Dynamic Fields Area -->
+                    <div id="dynamic-fields"></div>
+                    
+                    <!-- Additional Input Fields -->
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone/Mobile</label>
+                        <input type="text" class="form-control" id="phone" name="phone" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Address</label>
+                        <textarea class="form-control" id="address" name="address" rows="2"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="pincode" class="form-label">PIN Code</label>
+                        <input type="text" class="form-control" id="pincode" name="pincode" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="additional-info" class="form-label">Additional Info</label>
+                        <textarea class="form-control" id="additional-info" name="additional-info" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="document" class="form-label">Upload Document</label>
+                        <input type="file" class="form-control" id="document" name="document">
+                    </div>
+                    <button id="submit-btn" type="button" class="btn btn-primary submit-btn">Submit</button>
+                </form>
+            </div>
+
+
+            <!-- Address and Map Part -->
+            <div class="col-12 col-md-6 mb-4">
+                <h3>Our Address</h3>
+                <p>Leemen Lifts, 123 Lift Street, High-rise City, 12345</p>
+                <p>Phone: +91 916048848</p>
+                <p>Email: contact@leemenlifts.com</p>
+                <div class="map-container mb-3">
+                    <!-- Embed Google Map (Replace with actual map link) -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d876.23403518415!2d78.56811485016333!3d17.482014937446845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9d8caacc9017%3A0xc1a0b2d2fdf9b280!2sAkash%20Heights!5e0!3m2!1sen!2sin!4v1731351897950!5m2!1sen!2sin" 
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <!-- Social Media Icons -->
+                <div class="social-icons">
+                    <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sitemap -->
+<div class="sitemap">
+    <div class="container">
+        <h4>Sitemap</h4>
+        <div class="row">
+
+            <div class="col-md-1">
+                <a href="../index.html"><h6>Home</h6></a>                
+            </div>
+
+            <div class="col-md-1">
+                <a href="../models/models.html"><h6>Models</h6></a>
+                <ul>
+                    <li><a href="../brochures/brochures.html">Brochures</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-1">
+                <a href="../services/services.html"><h6>Services</h6></a>
+            </div>
+
+            <div class="col-md-1">
+                <a href="../careers/careers.html"><h6>Careers</h6></a>
+            </div>
+
+            <div class="col-md-1">
+                <a href="aboutus.html"><h6>About us</h6></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer text-center">
+    <div class="container">
+        <p>&copy; 2024 Leemen Lifts. All rights reserved.
+        <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="aboutus_script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
