@@ -185,7 +185,7 @@ body {
     background-color: rgba(255, 255, 255, 0.7); /* Glass effect */
     border: 20px solid #88a3c7; /* Steel frame effect */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for realism */
-    transition: all 3s ease-in-out; /* Smooth animation */
+    transition: all 2s ease-in-out; /* Smooth animation */
 }
 
 
