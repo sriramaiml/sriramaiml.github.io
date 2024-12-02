@@ -55,7 +55,7 @@ $(document).ready(function() {
                         <option selected>Choose...</option>
                         <option value="E326">E326</option>
                         <option value="E323">E323</option>
-                        <option value="V001">V001</option>
+                        <option value="E236">E236</option>
                     </select>
                 </div>`;
         }
