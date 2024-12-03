@@ -172,6 +172,14 @@ body {
 
 
 /* Entry Animation */
+/* Hide lift doors on phones */
+@media screen and (max-width: 768px) {
+    .lift-doors {
+        display: none;
+    }
+}
+
+
 /* Lift doors styles */
 .lift-doors {
     position: absolute; /* Make sure it overlays the background */

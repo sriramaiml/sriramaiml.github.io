@@ -36,20 +36,36 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', () => {
     const leftDoor = document.querySelector('.left');
     const rightDoor = document.querySelector('.right');
+    const liftDoors = document.querySelector('.lift-doors');
+    const content = document.querySelector('.content');
+    const isMobile = window.matchMedia("(max-width: 768px)").matches;
 
-    // Animate the doors opening
-    if (leftDoor && rightDoor) {
-        leftDoor.style.transform = 'translateX(-100%)';
-        rightDoor.style.transform = 'translateX(100%)';
-
-        // Show the content after the animation
-        setTimeout(() => {
-            document.querySelector('.content').style.display = 'block';
-        }, 2000); // Match the duration of the animation
+    if (isMobile) {
+        // Hide the lift doors and show content immediately on mobile
+        if (liftDoors) {
+            liftDoors.style.display = 'none';
+        }
+        if (content) {
+            content.style.display = 'block';
+        }
     } else {
-        console.error("Doors not found");
+        // Animate the doors opening on non-mobile devices
+        if (leftDoor && rightDoor) {
+            leftDoor.style.transform = 'translateX(-100%)';
+            rightDoor.style.transform = 'translateX(100%)';
+
+            // Show the content after the animation
+            setTimeout(() => {
+                if (content) {
+                    content.style.display = 'block';
+                }
+            }, 2000); // Match the duration of the animation
+        } else {
+            console.error("Doors not found");
+        }
     }
 });
+
 
 
 // Contact Card
